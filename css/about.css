@@ -1,0 +1,22 @@
+/*===about section===*/
+.about-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .about-container figure {
+    float: right;
+    margin-left: 1.3rem;
+    position: relative;
+    margin-bottom: 0.6rem;
+  }
+  
+  .about-container figure img {
+    max-width: 90%;
+    border-radius: 0.5rem;
+  }
+  
+  .about-content {
+    width: 80%;
+  }

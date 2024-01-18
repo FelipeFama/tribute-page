@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 6rem;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: var(--font-roboto);
+  line-height: 1.6;
+  text-align: center;
+}
+
+/*variables*/
+:root {
+  --font-roboto: "Roboto", sans-serif;
+  --box-shadow-dark-gray: 0 0.2rem rgba(0, 0, 0, 0.3);
+  --very-light-gray: #eee;
+  --dark-gray: #666;
+  --background-white: #fff;
+  --border-color: 0.1rem solid rgba(0, 0, 0, 0.3);
+  --dark-blue: #0000ff;
+  --scroll-black: #000;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--background-white);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--scroll-black);
+  border-radius: 10px;
+}
+
+section {
+  padding: 2rem 8%;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+p {
+  font-size: 1.2rem;
+  margin: 0.2rem;
+  line-height: 1.5;
+  letter-spacing: -0.5px;
+  text-align: justify;
+}
+
+.about-container,
+.books-container,
+.references-container {
+  background: var(--very-light-gray);
+  box-shadow: var(--box-shadow-dark-gray);
+}
+
+.about-container h1,
+.books-container h1,
+.references-container h1 {
+  font-size: 1.5rem;
+  padding: 1rem;
+  margin-bottom: 2rem;
+}
+
+/*===footer===*/
+footer {
+  color: var(--dark-gray);
+  text-align: center;
+  padding: 1rem 7%;
+  position: relative;
+  font-size: 1.2rem;
+}
+
+/*===scroll-top===*/
+#scroll-top {
+  position: fixed;
+  top: -120%;
+  right: 2rem;
+  padding: 0.5rem 1rem;
+  font-size: 2rem;
+  background: var(--scroll-black);
+  color: var(--background-white);
+  border-radius: 2rem;
+  transition: 1s linear;
+  z-index: 1000;
+}
+
+#scroll-top.active {
+  top: calc(100% - 12rem);
+}

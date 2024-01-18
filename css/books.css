@@ -1,0 +1,67 @@
+/*===books section===*/
+.books-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 0.2rem;
+}
+
+.book-content {
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  gap: 2rem;
+}
+
+.book-content figure {
+  margin: 1rem;
+  border: var(--border-color);
+  padding: 2rem;
+  background: var(--background-white);
+  border-radius: 0.5rem;
+}
+
+.book-content a {
+  cursor: pointer;
+}
+
+.book-content figure img {
+  max-width: 90%;
+  border-radius: 0.5rem;
+  object-fit: cover;
+  transition: transform 0.2s ease-in-out;
+}
+
+.book-content figure img:hover {
+  transform: scale(1.1);
+}
+
+.book-content figure figcaption {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-top: 1rem;
+}
+
+.books-container button {
+  padding: 1rem;
+  border: var(--border-color);
+  border-radius: 1rem;
+  margin-block: 2rem;
+  width: 20%;
+  background: var(--background-white);
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+  min-width: fit-content;
+}
+
+.books-container button:hover {
+  opacity: 0.75;
+}
+
+.books-container button a {
+  color: var(--dark-gray);
+  font-size: 1rem;
+  font-weight: 700;
+}

@@ -1,0 +1,19 @@
+/*===references section===*/
+.references-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 0.2rem;
+}
+
+.references-content {
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.references-content a {
+  color: var(--dark-blue);
+}
