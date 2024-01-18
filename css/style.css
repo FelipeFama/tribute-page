@@ -18,12 +18,14 @@ body {
   text-align: center;
 }
 
-/*variables*/ 
+/*variables*/
 :root {
   --font-roboto: "Roboto", sans-serif;
-  --box-shadow-light-gray: 0 0.2rem rgba(0,0,0,.1);
+  --box-shadow-dark-gray: 0 0.2rem rgba(0, 0, 0, 0.3);
   --very-light-gray: #eee;
   --dark-gray: #666;
+  --background-white: #fff;
+  --border-color: 0.1rem solid rgba(0,0,0,.3);
 }
 
 section {
@@ -34,7 +36,8 @@ a {
   text-decoration: none;
 }
 
-ul, li {
+ul,
+li {
   list-style: none;
 }
 
@@ -46,6 +49,13 @@ p {
   text-align: justify;
 }
 
+.about-container h1,
+.books-container h1 {
+  font-size: 1.5rem;
+  padding: 1rem;
+  margin-bottom: 2rem;
+}
+
 /*===header===*/
 header {
   padding: 1rem 7%;
@@ -53,7 +63,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  box-shadow: var(--box-shadow-light-gray);
+  box-shadow: var(--box-shadow-dark-gray);
 }
 
 header ul {
@@ -61,7 +71,7 @@ header ul {
   gap: 2rem;
 }
 
-header ul li a  {
+header ul li a {
   display: inline-block;
   padding: 0.8rem;
   font-size: 1.2rem;
@@ -74,18 +84,13 @@ header ul li a  {
   color: var(--dark-gray);
 }
 
-/*===about===*/
+/*===about section===*/
 .about-container {
   display: flex;
   justify-content: center;
   align-items: center;
   background: var(--very-light-gray);
-}
-
-.about-container h1 {
-  font-size: 1.5rem;
-  padding: 1rem;
-  margin-bottom: 2rem;
+  box-shadow: var(--box-shadow-dark-gray);
 }
 
 .about-container figure {
@@ -102,4 +107,72 @@ header ul li a  {
 
 .about-content {
   width: 80%;
+}
+
+/*===book section===*/
+.books-container {
+  background: var(--very-light-gray);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 0.2rem;
+}
+
+.book-content {
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  gap: 2rem;
+}
+
+.book-content figure {
+  margin: 1rem;
+  border: var(--border-color);
+  padding: 2rem;
+  background: var(--background-white);
+  border-radius: 0.5rem;
+}
+
+.book-content a {
+  cursor: pointer;
+}
+
+.book-content figure img {
+  max-width: 90%;
+  border-radius: 0.5rem;
+  object-fit: cover;
+  transition: transform 0.2s ease-in-out;
+}
+
+.book-content figure img:hover {
+  transform: scale(1.1);
+}
+
+.book-content figure figcaption {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-top: 1rem;
+}
+
+.books-container button {
+  padding: 1rem;
+  border: var(--border-color);
+  border-radius: 1rem;
+  margin-block: 2rem;
+  width: 20%;
+  background: var(--background-white);
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+.books-container button:hover {
+  opacity: 0.75;
+}
+
+.books-container button a {
+  color: var(--dark-gray);
+  font-size: 1rem;
+  font-weight: 700;
 }
