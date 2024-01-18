@@ -88,6 +88,24 @@ footer {
   font-size: 1.2rem;
 }
 
+/*===scroll-top===*/
+#scroll-top {
+  position: fixed;
+  top: -120%;
+  right: 2rem;
+  padding: 0.5rem 1rem;
+  font-size: 2rem;
+  background: var(--scroll-black);
+  color: var(--background-white);
+  border-radius: 2rem;
+  transition: 1s linear;
+  z-index: 1000;
+}
+
+#scroll-top.active {
+  top: calc(100% - 12rem);
+}
+
 /*===header===*/
 header {
   padding: 1rem 7%;
