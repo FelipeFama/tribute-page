@@ -10,7 +10,7 @@
       <img src="https://github.com/FelipeFama/tribute-page/assets/91050670/acfd8b9b-f5d2-498a-ad45-75a9dcb9c0d8" alt="mobile version" width=750 height=600  />
     </td>
     <td>
-      <img src="https://github.com/FelipeFama/tribute-page/assets/91050670/a0b58770-5d1a-4169-a0ac-b1012d56203c" alt="desktop version" width=1650 height=600 />
+      <img src="https://github.com/FelipeFama/tribute-page/assets/91050670/a0b58770-5d1a-4169-a0ac-b1012d56203c" alt="desktop version" width=2050 height=600 />
     </td>
   </tr>
 </table>
